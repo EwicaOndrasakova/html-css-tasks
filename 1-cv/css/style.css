@@ -1,0 +1,111 @@
+html {
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background-color: #e1dcdc;
+}
+
+.container {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.special {
+  background-color: #2a2826;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px auto;
+  width: 300px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.profile-picture {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.link {
+  color: #2a2826;
+  text-decoration: underline;
+  font-weight: bold;
+  display: block;
+}
+
+.about-me {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 100px;
+}
+
+.highlighted {
+  color: #2a2826;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+
+.text-left {
+  text-align: left;
+  margin-left: 50px;
+  padding-left: 20px;
+}
+
+
+a {
+  color: #343331;
+  text-decoration: underline;
+
+}
+
+small {
+  color: #6c6b67;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 25px 0 8px 0;
+  text-transform: uppercase;
+  display: block;
+}
+
+h4 {
+  color: #6c6b67;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 25px 0 8px 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h5 {
+  color: #424140;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 25px 0 8px 0;
+  text-transform: capitalize;
+}
+
+.work-experience {
+  margin-top: 100px;
+}
+
+.location {
+  color: #424140;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 25px 0 8px 0;
+  text-transform: capitalize;
+  display: inline;
+}
