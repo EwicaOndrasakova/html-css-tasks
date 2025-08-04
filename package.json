@@ -1,0 +1,12 @@
+{
+  "name": "html-css-tasks",
+  "version": "1.0.0",
+  "description": "HTML and CSS learning projects",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}

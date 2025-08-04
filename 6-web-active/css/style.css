@@ -51,7 +51,7 @@ h2 {
 .content-block img:hover {
   opacity: 0.9;
   transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .content-block p {
@@ -101,6 +101,3 @@ footer {
   color: #8f8f8f;
   margin-top: 100px;
 }
-
-
-

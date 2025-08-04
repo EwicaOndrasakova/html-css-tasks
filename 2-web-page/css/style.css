@@ -4,7 +4,7 @@ html {
 
 body {
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-nav {
@@ -27,7 +27,6 @@ section {
   background-color: #67cde4;
   color: #fff;
   padding: 50px 0 100px 0;
-
 }
 
 h1 {
@@ -44,13 +43,13 @@ h2 {
   font-style: normal;
 }
 
-.muzli-text{
+.muzli-text {
   font-size: 14px;
   font-family: inherit;
   line-height: 18px;
 }
 
-.muzli-button{
+.muzli-button {
   background-color: rgba(253, 104, 91, 0.933);
   color: #fff;
   border: none;
@@ -72,6 +71,3 @@ footer a {
   text-decoration: none;
   color: #4b4b4b;
 }
-
-
-

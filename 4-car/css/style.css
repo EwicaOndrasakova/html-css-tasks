@@ -1,4 +1,4 @@
-body { 
+body {
   margin: 0; /* Reset pre body - odstráni predvolené okraje */
 }
 
@@ -21,8 +21,8 @@ body {
   /* margin: 0 auto; Centruje banner na stránke.........Margin nepotrebujes, takyto margin by bol pre nejaky kontainer potom */
 }
 
-
-.banner::before { /* Pseudo-element pre zatemnenie obrázka */
+.banner::before {
+  /* Pseudo-element pre zatemnenie obrázka */
   content: ''; /* Povinný obsah pre pseudo-element */
   position: absolute; /* Absolútna pozícia vzhľadom na .banner */
   top: 50%; /* Centruje overlay */
@@ -47,8 +47,7 @@ body {
   position: relative; /* Relatívna pozícia pre z-index */
 }
 
-.banner__text span { /* Štýlovanie slova "SHARING" */
+.banner__text span {
+  /* Štýlovanie slova "SHARING" */
   color: orangered; /* Oranžová farba podľa zadania */
 }
-
-
