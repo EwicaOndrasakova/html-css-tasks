@@ -4,9 +4,13 @@
   "description": "HTML and CSS learning projects",
   "scripts": {
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "sass:7": "sass 7-new-homepage-cars-layout/scss/style.scss 7-new-homepage-cars-layout/css/style.css",
+    "sass:7:watch": "sass --watch 7-new-homepage-cars-layout/scss/style.scss 7-new-homepage-cars-layout/css/style.css",
+    "sass:7:compressed": "sass 7-new-homepage-cars-layout/scss/style.scss 7-new-homepage-cars-layout/css/style.css --style=compressed"
   },
   "devDependencies": {
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "sass": "^1.69.0"
   }
 }
