@@ -1,8 +1,20 @@
+// SCSS Variables
+$primary-blue: #74b9ff;
+$primary-red: #ff6b6b;
+$primary-green: #55efc4;
+$primary-pink: #ff6bb5;
+$text-dark: #434647;
+$text-light: #6f74769e;
+$text-muted: #4e51529e;
+$white: #fff;
+$light-gray: #efefef;
+$transition: all 0.3s ease;
+
 body {
   margin: 0;
   padding: 0;
   padding-top: 180px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
 
@@ -30,23 +42,24 @@ nav {
 
 .nav-list a {
   text-decoration: none;
-  color: #434647;
+  color: $text-dark;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.8px;
-  transition: all 0.3s ease;
+  transition: $transition;
   cursor: pointer;
-}
-.nav-list a:hover {
-  color: #74b9ff;
-  text-decoration: underline;
-  text-underline-offset: 20px;
+
+  &:hover {
+    color: $primary-blue;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+  }
 }
 
 .logo {
   font-weight: 200;
-  color: #74b9ff;
+  color: $primary-blue;
   margin: 0;
   padding-left: 20px;
 }
@@ -77,13 +90,13 @@ h1 {
   font-size: 14px;
   text-align: center;
   margin-bottom: 20px;
-  background-color: #74b9ff;
-  color: #fff;
+  background-color: $primary-blue;
+  color: $white;
   text-decoration: none;
   padding: 15px 100px;
   border-radius: 40px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+  transition: $transition;
   cursor: pointer;
 }
 
@@ -135,27 +148,25 @@ h2 {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #ff6b6b;
+  background-color: $primary-red;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .badge-blue {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #74b9ff;
+  background-color: $primary-blue;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .badge-green {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #55efc4;
+  background-color: $primary-green;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,7 +202,7 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background-color: #efefef;
+  background-color: $light-gray;
   padding: 50px 20px;
 }
 
@@ -201,7 +212,7 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background-color: #fff;
+  background-color: $white;
   padding: 20px;
   border-radius: 10px;
 }
@@ -230,7 +241,7 @@ h2 {
 .article-line-red {
   width: 80%;
   height: 3px;
-  background-color: #ff6bb5;
+  background-color: $primary-pink;
   margin-top: 20px;
   border: none;
   box-shadow: none;
@@ -263,7 +274,7 @@ h2 {
 .article-line-blue {
   width: 80%;
   height: 3px;
-  background-color: #74b9ff;
+  background-color: $primary-blue;
   margin-top: 20px;
   border: none;
   box-shadow: none;
@@ -299,7 +310,7 @@ h2 {
 .article-line-green {
   width: 80%;
   height: 3px;
-  background-color: #55efc4;
+  background-color: $primary-green;
   margin-top: 20px;
   margin-left: 0;
   border: none;
@@ -349,51 +360,54 @@ h2 {
   margin-bottom: 40px;
   border-radius: 10px;
   width: 250px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.2s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.2s ease;
   position: relative;
 }
 
 .pricing-container__item.basic {
-  border: 1px solid #ff6b6b;
+  border: 1px solid $primary-red;
 }
 
 .pricing-container__item.professional {
-  border: 1px solid #74b9ff;
+  border: 1px solid $primary-blue;
 }
 
 .pricing-container__item.enterprise {
-  border: 1px solid #55efc4;
+  border: 1px solid $primary-green;
 }
 
 .price-basic {
-  color: #ff6b6b;
+  color: $primary-red;
   font-size: 35px;
 }
 
 .price-professional {
-  color: #74b9ff;
+  color: $primary-blue;
   font-size: 35px;
 }
 
 .price-enterprise {
-  color: #55efc4;
+  color: $primary-green;
   font-size: 35px;
 }
 
 .pricing-container__item.basic:hover {
-  border: 1px solid #ff6b6b;
+  border: 1px solid $primary-red;
   box-shadow: 0 12px 24px rgba(255, 107, 107, 0.35);
   transform: scale(1.1);
 }
 
 .pricing-container__item.professional:hover {
-  border: 1px solid #74b9ff;
+  border: 1px solid $primary-blue;
   box-shadow: 0 12px 24px rgba(116, 185, 255, 0.35);
   transform: scale(1.1);
 }
 
 .pricing-container__item.enterprise:hover {
-  border: 1px solid #55efc4;
+  border: 1px solid $primary-green;
   box-shadow: 0 12px 24px rgba(85, 239, 196, 0.35);
   transform: scale(1.1);
 }
@@ -405,26 +419,26 @@ h2 {
   bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
-  color: #fff;
+  color: $white;
   border-radius: 30px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
-  transition: all 0.3s ease;
+  transition: $transition;
 }
 
 .pricing-button.red {
-  background-color: #ff6b6b;
+  background-color: $primary-red;
 }
 
 .pricing-button.blue {
-  background-color: #74b9ff;
+  background-color: $primary-blue;
 }
 
 .pricing-button.green {
-  background-color: #55efc4;
+  background-color: $primary-green;
 }
 
 .contact-container {
@@ -474,12 +488,13 @@ h2 {
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
-  color: rgba(111, 116, 118, 0.6196078431);
-  transition: all 0.3s ease;
+  color: $text-light;
+  transition: $transition;
   cursor: pointer;
-}
-.contact-container__contact-links a:hover {
-  color: #74b9ff;
+
+  &:hover {
+    color: $primary-blue;
+  }
 }
 
 .contact-container__form form {
@@ -491,7 +506,7 @@ h2 {
 }
 
 .contact-container__form label:not(.checkbox-label) {
-  color: #74b9ff;
+  color: $primary-blue;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -501,7 +516,7 @@ h2 {
 .contact-container__form-line {
   width: 100%;
   height: 1px;
-  background-color: rgba(111, 116, 118, 0.6196078431);
+  background-color: $text-light;
   margin-top: 10px;
   margin-bottom: 10px;
   border: none;
@@ -509,8 +524,8 @@ h2 {
   border-radius: 10px;
 }
 
-.contact-container__form input[type=text],
-.contact-container__form input[type=email] {
+.contact-container__form input[type='text'],
+.contact-container__form input[type='email'] {
   border: none;
   box-shadow: none;
 }
@@ -519,14 +534,14 @@ h2 {
 footer p {
   font-size: 12px;
   font-weight: 400;
-  color: rgba(78, 81, 82, 0.6196078431);
+  color: $text-muted;
 }
 
 .submit-btn {
   align-items: end;
-  background-color: #74b9ff;
+  background-color: $primary-blue;
   font-size: 12px;
-  color: #fff;
+  color: $white;
   border-radius: 40px;
   border: none;
   padding: 15px 80px;
@@ -534,10 +549,11 @@ footer p {
   display: block;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  transition: all 0.3s ease;
-}
-.submit-btn:hover {
-  transform: scale(1.05);
+  transition: $transition;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 footer {
@@ -548,5 +564,3 @@ footer {
 footer p {
   padding-left: 20px;
 }
-
-/*# sourceMappingURL=style.css.map */
